@@ -29,7 +29,7 @@ class Producto(models.Model):
     precio = models.DecimalField(max_digits=9,decimal_places=2)
     fecha_registro = models.DateTimeField(auto_now_add=True)
     #imagen = models.ImageField(upload_to='productos',blank=True)
-    imagen = CloudinaryField('image',default='')
+    imagen = CloudinaryField('image')
 
     def __str__(self):
         return self.nombre

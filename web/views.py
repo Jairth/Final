@@ -1,8 +1,7 @@
 from django.shortcuts import render,redirect
 
 from .models import (
-    Categoria,Marca,
-    Producto,Cliente,
+    Categoria,Marca,Producto,Cliente,
     Pedido,PedidoDetalle
 )
 
@@ -12,18 +11,27 @@ from .forms import ClienteForm
 
 ################### CATALOGO DE PRODUCTOS
 def index(request):
-    listaCategorias = Categoria.objects.all()
+    # listaCategorias = Categoria.objects.all()
+    # listaMarcas = Marca.objects.all()
+    # listaProductos = Producto.objects.all()
+    # context = {
+    #     'marcas':listaMarcas,
+    #     'categorias':listaCategorias,
+    #     'productos':listaProductos
+    # }
+    return render(request,'index.html')
+
+def carta(request):
+    # listaCategorias = Categoria.objects.all()
+    listaCategorias = Categoria.objects.order_by('nombre')
     listaMarcas = Marca.objects.all()
-    listaProductos = Producto.objects.all()
+    listaProductos = Producto.objects.order_by('nombre')[:]
     context = {
         'marcas':listaMarcas,
         'categorias':listaCategorias,
         'productos':listaProductos
     }
-    return render(request,'index.html',context)
-
-def carta(request):
-    return render(request, 'carta.html')
+    return render(request, 'carta.html',context)
 
 def contacto(request):
     return render(request, 'contacto.html')
@@ -42,7 +50,7 @@ def producto(request,producto_id):
     context = {
         'producto':objProducto
     }
-    return render(request,'producto.html',context)
+    return render(request,'carta.html',context)
 
 def productosPorCategoria(request,categoria_id):
     objCategoria = Categoria.objects.get(pk=categoria_id)
@@ -105,10 +113,6 @@ def agregarCarrito(request,producto_id):
     #print(request.session.get("cart"))
 
     #print(request.path_info)
-
-    if request.method == 'GET':
-        return redirect("/")
-
 
     return render(request,'carrito.html')
 

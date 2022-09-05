@@ -132,6 +132,7 @@ p {
 
 @media screen and (min-width: 840px) {
   .form__activo {
+    display: inline-block;
     background: var(--color--button);
     color: var(--color--text1)
   }
