@@ -14,7 +14,7 @@ html {
 
 :root {
   --color--primary: hsla(20, 100%, 98%);
-  --color--secondary: 	hsl(27, 100%, 91%);
+  --color--secondary: 	rgb(255, 230, 209);
   --color--third: hsl(38, 100%, 90%);
   --color--text1: hsl(354, 12%, 16%);
   --color--text2: hsl(8, 8%, 37%);

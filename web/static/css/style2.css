@@ -101,7 +101,7 @@ body {
 	-webkit-text-size-adjust: 100%;
 	font-size: 14px;
 	line-height: 1.42857143;
-	background: #f1f1fb;
+	background: linear-gradient( 90.6deg, #fff8f5 59.3%, #ffd1d37a 91.1% );
 
 	font-family: 'Open Sans', sans-serif;
 	font-weight: 400;
