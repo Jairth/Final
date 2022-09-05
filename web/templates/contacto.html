@@ -1,0 +1,72 @@
+{% extends 'layout.html' %}
+{% block content %}
+
+  <main>
+    <section class="info">
+      <div class="container">
+        <div class="info__wrapper">
+          <div class="info__item">
+            <div class="info__item-icon">
+              <img src="../static/img/truck.svg" alt="Camión">
+            </div>
+            <h3>Envío gratis</h3>
+            <p>A todo el Perú</p>
+          </div>
+          <div class="info__item">
+            <div class="info__item-icon">
+              <img src="../static/img/wall-clock-icon.svg" alt="Horario">
+            </div>
+            <h3>Horario</h3>
+            <p>9AM - 7PM</p>
+          </div>
+          <div class="info__item">
+            <div class="info__item-icon">
+              <img src="../static/img/address-icon.svg" alt="Dirección">
+            </div>
+            <h3>Dirección</h3>
+            <p>Magdalena 7485</p>
+          </div>
+          <div class="info__item">
+            <div class="info__item-icon">
+              <img src="../static/img/phone-icon.svg" alt="Llamada">
+            </div>
+            <h3>¡Llama ya!</h3>
+            <p>164-2317</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="form">
+      <div class="container">
+        <h3 class="form__title">Contacto & consulta</h3>
+      <div class="form__wrapper">
+        <form>
+          <div class="form__group">
+            <label for="firstName">Nombres</label>
+            <input type="text" name="first_name" id="firstName">
+          </div>
+          <div class="form__group">
+            <label for="lastName">Apellidos</label>
+            <input type="text" name="last_name" id="lastName">
+          </div>
+          <div class="form__group">
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" required>
+          </div>
+          <div class="form__group">
+            <label for="subject">Asunto</label>
+            <input type="text" name="subject" id="subject" required>
+          </div>
+          <div class="form__group form__group-full">
+            <label for="message">Mensaje</label>
+            <textarea name="message" id="message" cols="30" rows="10" required></textarea>
+          </div>
+          <button id="enviar" type="submit" class="btn form__activo">Enviar</button>
+        </form>
+      </div>
+    </section>
+    <a id="mimail" href="mailto:rodriguez6191@hotmail.com"></a>
+  </main>
+
+{% endblock %}
