@@ -287,7 +287,10 @@ input:focus {
 .overflow-hidden {
 	overflow: hidden;
 }
-
+.carrito{
+	background: #ff0000;
+  }
+  
 
 .maincont {
 	padding-top: 0;
@@ -335,7 +338,7 @@ body p.maincont-subttl {
 }
 
 .page-cont {
-	background: #fff;
+	background: #ffe6d1;
 	position: relative;
 	z-index: 2;
 	padding: 45px 50px 50px;
@@ -349,7 +352,7 @@ body p.maincont-subttl {
 .page-styling {
 	font-size: 15px;
 	line-height: 1.8;
-	color: #686f8a;
+	color: #e92626;
 	font-weight: 400;
 }
 .page-styling:after {
@@ -359,7 +362,7 @@ body p.maincont-subttl {
 }
 .page-styling a,
 .page-cont a {
-	color: #6bc67c;
+	color: #2e2425;
 	text-decoration: none;
 	transition: all 0.2s;
 }
@@ -609,9 +612,9 @@ body .page-styling h1 {
 .page-cont input[type=text] {
 	border: none;
 	border-radius: 30px;
-	background: #f4f5fb;
+	background: #fdb4b8;
 	font-size: 15px;
-	color: #9fa4bb;
+	color: #2e2425;
 	transition: all 0.2s;
 	display: block;
 	height: 42px;
@@ -681,10 +684,10 @@ body .page-styling h1 {
 .page-cont input[type=submit],
 .page-styling input.button,
 .page-cont input.button {
-	background: #6bc67c;
+	background: #FFE333;
 	transition: all 0.2s;
 	border-radius: 30px;
-	color: #fff;
+	color: #2e2425;
 	font-weight: 600;
 	font-size: 15px;
 	display: block;
@@ -816,8 +819,8 @@ body i.icon {
 	vertical-align: initial;
 }
 .btn {
-	background-color: #6bc67c;
-	color: #fff;
+  background-color:#FFE333 ;
+	color: #2e2425;
 	font-size: 15px;
 	font-weight: 600;
 	border-radius: 60px;
@@ -988,7 +991,7 @@ body i.icon {
 .site-header {
 	margin: 0 0 25px;
 	padding: 15px 0;
-	background-color: #ffffff;
+	background-color: #fff8f5;
 	box-shadow: 0 3px 10px 0 rgba(0,0,0,0.03);
 	position: relative;
 }
@@ -4477,7 +4480,7 @@ span.badge-1 {
 .maincont .prod-litems .prod-li {
 	margin: 0 0 26px;
 	position: relative;
-	background: #fff;
+	background: #ffe6d1;
 	padding: 0;
 	z-index: 2;
 }
@@ -4561,7 +4564,7 @@ span.badge-1 {
 	font-weight: 400;
 }
 .prod-litems .prod-li-ttl-wrap p a {
-	color: #9292b4;
+	color: #e07676;
 	transition: all 0.2s;
 	border-bottom: 1px solid transparent;
 }
@@ -4577,7 +4580,7 @@ span.badge-1 {
 	color: #283346;
 }
 .prod-litems .prod-li-ttl-wrap h3 a {
-	color: #283346;
+	color: #2e2425;
 	transition: all 0.2s;
 	border: none;
 }
@@ -4605,7 +4608,7 @@ span.badge-1 {
 	padding: 0 15px 0 0;
 	width: 26%;
 	font-size: 15px;
-	color: #9292b4;
+	color: #e07676;
 	max-width: 90px;
 }
 .prod-litems .prod-li-total-wrap {
@@ -4618,7 +4621,7 @@ span.badge-1 {
 .prod-litems .prod-li-total-wrap .prod-li-total,
 .prod-litems .prod-li-price-wrap .prod-li-price {
 	margin: 0;
-	color: #6bc67c;
+	color: #2e2425;
 	font-size: 14px;
 	font-weight: 600;
 }
@@ -7563,7 +7566,7 @@ div.product.product-type-grouped .prod-add form.cart > .single_add_to_cart_butto
 	width: 15%;
 }
 .cart-actions {
-	background: #fff;
+	background: #ffe6d1;
 	padding: 20px 29px 24px;
 	margin: 0 0 80px;
 }
@@ -7587,7 +7590,7 @@ div.product.product-type-grouped .prod-add form.cart > .single_add_to_cart_butto
 .cart-actions .coupon input[type=text] {
 	border: 1px solid #e0e4f6;
 	border-radius: 3px;
-	background: #f4f5fb;
+	background: #fdb4b8;
 	font-size: 15px;
 	color: #8990AD;
 	transition: all 0.2s;
@@ -7611,10 +7614,10 @@ div.product.product-type-grouped .prod-add form.cart > .single_add_to_cart_butto
 	color: #9fa4bb;
 }
 .cart-actions .coupon input[type=submit] {
-	background: #6bc67c;
+	background: #FFE333;
 	transition: all 0.2s;
 	border-radius: 2px;
-	color: #fff;
+	color: #2e2425;
 	font-weight: 700;
 	text-transform: uppercase;
 	font-size: 14px;
@@ -7794,10 +7797,10 @@ div.product.product-type-grouped .prod-add form.cart > .single_add_to_cart_butto
 }
 .cart-actions a.checkout-button {
 	background-color: transparent;
-	background: #6bc67c;
+	background: #FFE333;
 	transition: all 0.2s;
 	border-radius: 2px;
-	color: #fff;
+	color: #2e2425;
 	font-weight: 700;
 	font-size: 14px;
 	text-transform: uppercase;
@@ -11692,7 +11695,7 @@ Compare List
 ----------------------------------*/
 .site-footer {
 	padding: 55px 5% 25px;
-	background-color: #ffffff;
+	background-color: #ffe6d1;
 }
 .site-footer .widget {
 	margin-bottom: 20px;

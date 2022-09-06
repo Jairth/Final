@@ -1,14 +1,11 @@
 {% extends 'layout2.html' %}
 {% block content %}
     <h1 class="maincont-ttl">Carrito</h1>
-    <ul class="b-crumbs">
-        <li><a href="/">Home</a></li>
-        <li>Carrito</li>
-    </ul>
+    
     <div class="page-styling">
     <div class="woocommerce prod-litems section-list">
         {% for key,value in request.session.cart.items %}
-        <article class="prod-li sectls">
+        <article class="carrito prod-li sectls">
             <div class="prod-li-inner">
                 <a href="product.html" class="prod-li-img">
                     <img src="{{ value.imagen }}" alt="">
